@@ -14,9 +14,6 @@
     .navbar-brand {
         font-size: 2rem !important;
     }
-    .navbar-light .navbar-nav .nav-item {
-        margin-left: 35px;
-    }
 }
 
 @media only screen and (max-width: 800px) and (min-width: 500px) {
@@ -32,7 +29,8 @@
     #navbar_brand {
         display: block;
     }
-    .navbar-light .navbar-nav .nav-item {
-        margin-left: 35px;
+    .right img {
+        width: 100%;
+        margin-left: 5%;
     }
 }
