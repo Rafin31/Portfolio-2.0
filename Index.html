@@ -28,67 +28,76 @@
 <body>
     <section class="top">
         <!-- navbar -->
-        <div class="container-fluid ">
-            <a class="navbar-brand text-center" href="/"><span class="head_tag">Asif H Rafin</span></a>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler ml-3 " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-angle-double-down"></i>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark   fixed-top  ">
+            <a class="navbar-brand" href="/"><span class="head_tag">Asif H Rafin</span></a>
+            <button class="navbar-toggler mr-3" id="onclick" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-angle-double-down "></i>
         </button>
-            <a class="navbar-brand mx-auto" id="navbar_brand" href="/"><span class="head_tag">Asif H Rafin</span></a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="navbar-brand " id="navbar_brand" href="/"><span class="head_tag">Asif H Rafin</span></a>
+            <div class="collapse navbar-collapse justify-content-end toggle" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#"><i class="fas fa-home"></i> &nbsp Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" id="onclick1" data-target=".navbar-collapse.show" href="#"><i class="fas fa-home"></i> &nbsp Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#"><i class="far fa-address-card"></i>&nbsp About</a>
+                        <a class="nav-link" id="onclick2" data-target=".navbar-collapse.show" href="#about_me"><i class="far fa-address-card"></i>&nbsp About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#"><i class="fas fa-laptop-code"></i>&nbsp Skills</a>
+                        <a class="nav-link" id="onclick3" data-target=".navbar-collapse.show" href="#"><i class="fas fa-laptop-code"></i>&nbsp Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#"><i class="fas fa-tasks"></i>&nbsp Projects</a>
+                        <a class="nav-link" id="onclick4" data-target=".navbar-collapse.show" href="#"><i class="fas fa-tasks"></i>&nbsp Projects</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#"><i class="fas fa-university"></i>&nbsp Qualifications</a>
+                        <a class="nav-link" id="onclick5" data-target=".navbar-collapse.show" href="#"><i class="fas fa-university"></i>&nbsp Qualifications</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#"><i class="fas fa-images"></i>&nbsp Gallery</a>
+                        <a class="nav-link" id="onclick6" data-target=".navbar-collapse.show" href="#"><i class="fas fa-images"></i>&nbsp Gallery</a>
                     </li>
                     <li class="nav-item last_child ">
-                        <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#"><i class="fas fa-id-card-alt"></i>&nbsp Contact Me</a>
+                        <a class="nav-link" id="onclick7" data-target=".navbar-collapse.show" href="#"><i class="fas fa-id-card-alt"></i>&nbsp Contact Me</a>
                     </li>
 
                 </ul>
             </div>
         </nav>
 
-        <section class="header_section">
-            <div class="container">
-                <div class="row">
-                    <div class="left col-sm-6">
-                        <h1>Hello,My name is <span>Rafin</span> </h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloremque dignissimos unde, facere ex, perferendis labore illum molestias id sapiente assumenda officia voluptas doloribus? Provident vitae expedita porro aspernatur
-                            error.
-                        </p>
-                        <a class="button" href="#">Download CV</a>
-                        <div class=" social_links flex justify-center">
-                            <a href="https://www.facebook.com/asif.hossain.58760608" target="blank" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-twitter" target="blank"></a>
-                            <a href="https://www.linkedin.com/in/asif-hossain-6982b81ba/" target="blank" class="fa fa-linkedin"></a>
-                            <a href="#" class="fa fa-snapchat-ghost" target="blank"></a>
-                            <a href="https://www.instagram.com/asif_h_rafin/?hl=en" target="blank" class="fa fa-instagram"></a>
-                        </div>
-
-                    </div>
-                    <div class="right col-sm-6">
-                        <img src="Images/2.png" alt="">
-                    </div>
-                </div>
-
-        </section>
+        <div class="header_container">
+            <div class="top_header">
+                <h3>Hello! My Name is <span>Rafin</span></h3>
+            </div>
+            <div class="bottom_header">
+                <p> I love <span class="typingText"></span> <span class="cursor ">&nbsp</span> </p>
+            </div>
+            <a href="#about_me" class="header_button">About Me</a>
+        </div>
     </section>
+
+    <section class="header_section">
+        <div class="container">
+            <div class="row">
+                <div class="left col-sm-6" id="about_me">
+                    <h1>About me </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloremque dignissimos unde, facere ex, perferendis labore illum molestias id sapiente assumenda officia voluptas doloribus? Provident vitae expedita porro aspernatur
+                        error.
+                    </p>
+                    <a class="button" href="#">Download CV</a>
+                    <div class=" social_links flex justify-center">
+                        <a href="https://www.facebook.com/asif.hossain.58760608" target="blank" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter" target="blank"></a>
+                        <a href="https://www.linkedin.com/in/asif-hossain-6982b81ba/" target="blank" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-snapchat-ghost" target="blank"></a>
+                        <a href="https://www.instagram.com/asif_h_rafin/?hl=en" target="blank" class="fa fa-instagram"></a>
+                    </div>
+
+                </div>
+                <div class="right col-sm-6">
+                    <img src="Images/2.png" alt="">
+                </div>
+            </div>
+
+    </section>
+
 
 
 

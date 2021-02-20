@@ -1,18 +1,16 @@
 @media only screen and (max-width: 500px) {
     .navbar-brand {
-        padding-left: 0px;
+        margin-left: 15%;
     }
     button .navbar-toggler {
         border: 2px solid red;
     }
-    .container-fluid {
-        display: none;
-    }
-    #navbar_brand {
-        display: block;
-    }
     .navbar-brand {
         font-size: 2rem !important;
+    }
+    .navbar-nav {
+        margin-left: 15px;
+        padding: 5px;
     }
 }
 
@@ -22,12 +20,6 @@
     }
     button .navbar-toggler {
         border: 2px solid red;
-    }
-    .container-fluid {
-        display: none;
-    }
-    #navbar_brand {
-        display: block;
     }
     .right img {
         width: 100%;
