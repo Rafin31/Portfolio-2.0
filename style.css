@@ -145,7 +145,7 @@
     }
     
     .top {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/Images/unpllash2.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(Images/unpllash2.jpg);
         height: 100vh;
         background-attachment: fixed;
         max-width: 100vw;
