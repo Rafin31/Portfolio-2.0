@@ -1,3 +1,5 @@
+// button hover effect
+
 click = () => {
     const rotateElelmaent = document.querySelector(".fas");
     if (rotateElelmaent.classList.contains("rotate")) {
@@ -63,3 +65,41 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(type, newTextDelay + 250);
 });
+
+//  animated skill bars
+
+const skillsSelection = document.getElementById("skill_selection");
+const progressBars = document.querySelector('.progerss_bar');
+
+function showProgress() {
+    var elems = document.getElementsByClassName("progerss_bar");
+
+    Array.from(elems).forEach(v => {
+        //   this.parentElement.getElementsByClassName('content')[0].classList.toggle('hidden');
+        const value = v.dataset.progress;
+        v.style.width = `${value}%`;
+    });
+}
+
+function hideProgress() {
+    var elems = document.getElementsByClassName("progerss_bar");
+
+    Array.from(elems).forEach(v => {
+        v.style.width = 0;
+    });
+}
+
+
+
+
+window.addEventListener("scroll", () => {
+    const sectionPos = skillsSelection.getBoundingClientRect().top;
+    const screenPos = window.innerHeight;
+
+
+    if (sectionPos < screenPos) {
+        showProgress();
+    } else {
+        hideProgress();
+    }
+})
