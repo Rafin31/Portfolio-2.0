@@ -12,6 +12,14 @@
         margin-left: 15px;
         padding: 5px;
     }
+    .right img {
+        width: 100%;
+        margin-left: 5%;
+        padding-bottom: 15%;
+    }
+    #about_me {
+        margin: 1% 1% 5% 5%;
+    }
 }
 
 @media only screen and (max-width: 800px) and (min-width: 500px) {
@@ -22,7 +30,7 @@
         border: 2px solid red;
     }
     .right img {
-        width: 100%;
-        margin-left: 5%;
+        width: 70%;
+        margin-left: 17%;
     }
 }
