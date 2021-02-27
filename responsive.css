@@ -34,7 +34,22 @@
         border: 2px solid red;
     }
     .right img {
+        width: 50%;
+        margin-left: 17%;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 300px) {
+    .right img {
         width: 70%;
         margin-left: 17%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .about_row .right img {
+        position: relative;
+        bottom: 75px;
+        left: 50px;
     }
 }

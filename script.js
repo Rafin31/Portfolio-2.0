@@ -17,7 +17,7 @@ document.getElementById("onclick").addEventListener("click", click);
 
 const typeTextSpan = document.querySelector(".typingText");
 const cursorSpan = document.querySelector(".cursor");
-const textarray = ["Food", "Traveling", "Eating", "Coding"];
+const textarray = ["A Software Developer", "Programmer", "A Foodie", "A Travel Freak"];
 const typingDelay = 200;
 const newTextDelay = 2000;
 const erasingDelay = 100;
