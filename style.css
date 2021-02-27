@@ -299,6 +299,10 @@ nav {
     max-width: 100vw;
 }
 
+.skillbars span {
+    color: slateblue;
+}
+
 .hero {
     height: 100px;
     margin: 25px auto;
@@ -349,4 +353,30 @@ nav {
 
 .container p {
     margin: 0;
+}
+
+
+/* ********************************Work gallary******************************************* */
+
+.gallary .row .column img {
+    width: 8%;
+    margin: 10px 15px;
+}
+
+.gallary .work_gal {
+    text-align: center;
+}
+
+.gallary {
+    height: 60vh;
+    max-width: 100%;
+    font-family: 'Montserrat', serif !important;
+}
+
+.gallary .column {
+    margin: 25px 0px;
+}
+
+.gallary span {
+    color: slateblue;
 }

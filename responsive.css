@@ -20,6 +20,10 @@
     #about_me {
         margin: 1% 1% 5% 5%;
     }
+    .gallary .row .column img {
+        width: 20%;
+        margin: 10px 15px;
+    }
 }
 
 @media only screen and (max-width: 800px) and (min-width: 500px) {
