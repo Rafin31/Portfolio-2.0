@@ -13,20 +13,19 @@ body {
 /* ***************************************************Scroll Button************************************************** */
 
 #myBtn {
-    display: none;
+    opacity: 0;
     position: fixed;
-    bottom: 20px;
-    right: 35px;
+    bottom: 10px;
+    right: 20px;
     z-index: 99;
     border: none;
     outline: none;
     cursor: pointer;
     font-size: 3rem;
+    transition: all 0.5s ease;
 }
 
-.scroll_top {
-    transition: all 1s ease-in-out;
-}
+.scroll_top {}
 
 #myBtn:hover {
     opacity: 0.8;
