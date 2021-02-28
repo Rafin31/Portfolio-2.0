@@ -9,6 +9,31 @@ body {
     overflow-x: hidden;
 }
 
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 35px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.scroll_top {
+    transition: all 1s ease-in-out;
+}
+
+#myBtn:hover {
+    opacity: 0.8;
+    /* Add a dark-grey background on hover */
+}
+
+.scroll_top .fas {
+    color: slateblue;
+}
+
 
 /* ********************************Navbar************************************ */
 
@@ -298,8 +323,8 @@ nav {
 .about_row .right::after {
     content: " ";
     position: absolute;
-    top: 10px;
-    left: 50px;
+    top: 20px;
+    left: 80px;
     border: 100px solid;
     opacity: 0.1;
     border-radius: 50%;
@@ -431,7 +456,7 @@ nav {
 }
 
 .gallary {
-    min-height: 60vh;
+    min-height: 30vh;
     max-width: 100%;
     margin-top: 150px;
     font-family: 'Montserrat', serif !important;

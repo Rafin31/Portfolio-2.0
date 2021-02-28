@@ -58,6 +58,8 @@
     }
     .about_row .right img {
         width: 70%;
+        margin-left: 13%;
+        margin-bottom: 10%;
     }
     .navbar-nav {
         margin-right: 15%;

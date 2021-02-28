@@ -1,5 +1,4 @@
-// button hover effect
-
+// Menu button hover effect
 click = () => {
     const rotateElelmaent = document.querySelector(".fas");
     if (rotateElelmaent.classList.contains("rotate")) {
@@ -118,7 +117,10 @@ window.addEventListener("scroll", () => {
 })
 
 
-window.onscroll = function() { scrollFunction() };
+window.onscroll = function() {
+    scrollFunction();
+    scrollFunctionForTopButton();
+};
 
 function scrollFunction() {
 
@@ -128,17 +130,27 @@ function scrollFunction() {
         if (navbar.classList.contains("bg-transparent")) {
             navbar.classList.remove("bg-transparent");
             navbar.classList.add("bg-dark");
-
-
-        } else {
-
         }
-
 
     } else {
         navbar.classList.remove("bg-dark");
         navbar.classList.add("bg-transparent");
     }
+}
 
+// Scroll to the top
 
+mybutton = document.getElementById("myBtn");
+
+function scrollFunctionForTopButton() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
