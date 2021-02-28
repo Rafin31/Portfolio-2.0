@@ -7,9 +7,22 @@ click = () => {
     } else {
         rotateElelmaent.classList.add("rotate");
     }
+
+}
+bgchange = () => {
+    const navbar = document.querySelector(".navbar");
+    if (navbar.classList.contains("bg-transparent")) {
+        navbar.classList.remove("bg-transparent");
+        navbar.classList.add("bg-dark");
+
+
+    } else {
+
+    }
+
 }
 document.getElementById("onclick").addEventListener("click", click);
-
+document.getElementById("onclick").addEventListener("click", bgchange);
 
 
 
@@ -103,3 +116,29 @@ window.addEventListener("scroll", () => {
         hideProgress();
     }
 })
+
+
+window.onscroll = function() { scrollFunction() };
+
+function scrollFunction() {
+
+    const navbar = document.querySelector(".navbar");
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        if (navbar.classList.contains("bg-transparent")) {
+            navbar.classList.remove("bg-transparent");
+            navbar.classList.add("bg-dark");
+
+
+        } else {
+
+        }
+
+
+    } else {
+        navbar.classList.remove("bg-dark");
+        navbar.classList.add("bg-transparent");
+    }
+
+
+}

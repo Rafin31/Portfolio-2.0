@@ -1,12 +1,10 @@
 @media only screen and (max-width: 500px) {
     .navbar-brand {
         margin-left: 15%;
+        font-size: 1.5rem !important;
     }
     button .navbar-toggler {
         border: 2px solid red;
-    }
-    .navbar-brand {
-        font-size: 2rem !important;
     }
     .navbar-nav {
         margin-left: 15px;
@@ -28,7 +26,7 @@
 
 @media only screen and (max-width: 800px) and (min-width: 500px) {
     .navbar-brand {
-        padding-left: 0px;
+        margin-left: 60px;
     }
     button .navbar-toggler {
         border: 2px solid red;
@@ -48,8 +46,20 @@
 
 @media only screen and (min-width: 900px) {
     .about_row .right img {
-        position: relative;
         bottom: 75px;
         left: 50px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .navbar-brand {
+        margin-left: 15%;
+        color: rebeccapurple;
+    }
+    .about_row .right img {
+        width: 70%;
+    }
+    .navbar-nav {
+        margin-right: 15%;
     }
 }
