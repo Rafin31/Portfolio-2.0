@@ -9,10 +9,13 @@ body {
     overflow-x: hidden;
 }
 
+
+/* ***************************************************Scroll Button************************************************** */
+
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 40px;
+    bottom: 20px;
     right: 35px;
     z-index: 99;
     border: none;
