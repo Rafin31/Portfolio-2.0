@@ -488,6 +488,7 @@ nav {
 
 .education_section {
     margin: 13% 5px;
+    font-family: var(--font);
 }
 
 .education {
