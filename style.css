@@ -51,7 +51,7 @@ body {
 }
 
 .scroll_top .fas {
-    color: slateblue;
+    color: rgb(33, 0, 247);
 }
 
 
@@ -203,7 +203,7 @@ nav {
     display: inline-block;
     background-color: white;
     width: 3px;
-    animation: blink 1s infinite;
+    animation: blink 0.8s infinite;
 }
 
 .header_container .bottom_header p .Animation {
@@ -487,17 +487,20 @@ nav {
 /* *************************************Achademics Part********************************** */
 
 .education_section {
-    margin: 13% 5px;
+    min-height: 30vh;
+    margin: 5% 5px;
+    padding: 20px 0px;
     font-family: var(--font);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgb(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5)), url(Images/Edubackground.png);
 }
 
 .education {
-    height: 80vh;
     max-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    font-weight: 800;
 }
 
 .education .box {
@@ -516,4 +519,38 @@ nav {
 
 .education .box ul {
     margin-left: 25px;
+}
+
+
+/* **************************************************Projects Section********************************************* */
+
+.projects {
+    width: 100vw;
+    max-height: 100vh;
+}
+
+.projects .card {
+    width: 100%;
+    margin-bottom: 80px !important;
+    margin: auto;
+}
+
+
+/* *******************************modal************************ */
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    display: inline-block;
+    margin: 50px !important;
+    padding: 10px !important;
+    width: 30px !important;
+    height: 50px !important;
+    background: red no-repeat center center;
+    background-color: blueviolet !important;
+    background-size: 101% 100%;
+}
+
+.carousel-inner>.carousel-item>img {
+    width: 640px;
+    height: 360px;
 }

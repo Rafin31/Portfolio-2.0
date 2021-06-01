@@ -30,8 +30,8 @@ document.getElementById("onclick").addEventListener("click", bgchange);
 const typeTextSpan = document.querySelector(".typingText");
 const cursorSpan = document.querySelector(".cursor");
 const textarray = ["A Software Developer", "A Programmer", "A Foodie", "A Travel Freak"];
-const typingDelay = 200;
-const newTextDelay = 2000;
+const typingDelay = 100;
+const newTextDelay = 1000;
 const erasingDelay = 100;
 
 let charIndex = 0;
@@ -49,7 +49,7 @@ type = () => {
 
     } else {
         cursorSpan.classList.remove("Animation");
-        setTimeout(erase, typingDelay + 2000);
+        setTimeout(erase, typingDelay + 1000);
     }
 }
 
